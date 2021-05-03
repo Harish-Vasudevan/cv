@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color:#60a9ff;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        
+    } 
+    .panel{
+        background-color: white;
+        border-radius: 10px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 960px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+     .pricing-plan{
+        padding: 10px 10px;
+        border-bottom: 1px solid #e1f1ff;
+        border-right:1px solid #e1f1ff;
+
+    }
+    .pricing-plan:last-child{
+        border-right:none;
+        
+        
+    } */
+     
+     .pricing-header{
+         color:#888;
+         font-weight: 600;
+         letter-spacing: 1px;
+     }
+
+    
+
+    
+    html{
+        box-sizing: border-box;
+    }
+    .pricing-features{
+        margin: 50px 0 50px;
+        color:#016ff9;
+        list-style-type:none;
+    }
+    .pricing-features-item{
+        font-weight: 600;
+         letter-spacing: 1px;
+         font-size: 12px;
+         line-height: 1.5;
+         padding: 15px 0;
+         border-top: 1px solid #e1f1ff ;
+    }
+    .pricing-price{
+        color: #016ff9;
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .pricing-features-item:last-child{
+
+        border-bottom: 1px solid #e1f1ff ;
+    }
+    .pricing-button{
+        border:1px solid #9dd1ff;
+        border-radius: 10px;
+        color: white;
+        display: inline-block;
+        padding: 15px 35px;
+        text-decoration: none;
+        margin: 25px 0;
+        background-color:#016ff9 ;
+         transition: all 200ms ease-in-out; 
+    }
+    .pricing-button:hover,.pricing-button:focus{
+        background-color: #e1f1ff;
+
+    }
+    .pricing-image{ 
+         margin-bottom: 25px;
+         max-width: 100%;
+         width: 200px;
+         height: 200px;
+     } 
+     @media (min-width:200px) and (max-width:500px){
+         .panel{
+             flex-direction: column;
+             
+
+             }
+             .pricing-plan {
+                 border-right: none;
+         }
+         .pricing-plan :last-child{
+             border-bottom: none;
+         }
+     }
+</style>
+</head>
+<body>
+    <div class="panel">
+    <div class="panel-pricing-table">
+        <div class="pricing-plan">
+            <img src="https://image.freepik.com/free-vector/guy-wearing-vr-goggles-neon-sign_1262-19545.jpg"  class="pricing-image" alt="">
+            <h2 class="pricing-header">BEGINNER</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Hyper Performance</li>
+                <li class="pricing-features-item">DEATH league</li>
+            </ul>
+            <span class="pricing-price">Free</span>
+            <a href="*/" class="pricing-button"> Sign up</a>
+
+        </div>
+    </div>
+    <div class="panel-pricing-table">
+        <div class="pricing-plan">
+            <img src="https://image.freepik.com/free-vector/assassin-with-two-swords-esport-gaming_1258-29051.jpg" alt="" class="pricing-image">
+            <h2 class="pricing-header">INTERMEDIATE</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">INTENSive graphics</li>
+                <li class="pricing-features-item">Multipleplayer Battle</li>
+            </ul>
+                <span class="pricing-price">$250</span>
+            <a href="*/" class="pricing-button"> Free trial</a>
+
+        </div>
+    </div>
+    <div class="panel-pricing-table">
+        <div class="pricing-plan">
+            <img src="https://image.freepik.com/free-vector/modern-professional-knights-logo-mascot-game-design-template_1258-29033.jpg" class="pricing-image" >
+            <h2 class="pricing-header">ADVANCED</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Lengendry audio quality</li>
+                <li class="pricing-features-item">Immersive optimization</li>
+          </ul>
+                <span class="pricing-price">$400</span>
+            <a href="*/" class="pricing-button"> Free trial</a>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
